@@ -5,6 +5,9 @@
   "repository": "https://github.com/Ricardo-1976/Finapi-SOLID.git",
   "author": "Ricardo-1976 <ricardojoaoantonio2@gmail.com>",
   "license": "MIT",
+  "scripts": {
+      "dev": "ts-node-dev --inspect --transpile-only --ignore-watch node_modules --respawn src/server.ts"
+  },
   "dependencies": {
     "express": "^4.17.2"
   },
