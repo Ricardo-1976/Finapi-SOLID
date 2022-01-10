@@ -6,7 +6,7 @@ class CreateUserController {
 
   constructor(private createUserUseCase: CreateUserUseCase) {}
 
-  handle(request: Request, Response: Response): Response {
+  handle(request: Request, response: Response): Response {
     const { name, cpf } = request.body;
 
     this.createUserUseCase.execute({ name, cpf });
@@ -14,3 +14,5 @@ class CreateUserController {
     return response.status(201).send();
   }
 }
+
+export { CreateUserController };

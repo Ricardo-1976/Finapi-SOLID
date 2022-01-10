@@ -2,12 +2,9 @@ import { v4 as uuidV4 } from  "uuid";
 
 class User {
   id?: string;
-  name: string;
-  
+  name: string; 
   cpf: string;
-
   statement: [];
-
   created_at: Date;
 
   constructor() {
@@ -17,4 +14,4 @@ class User {
   }
 }
 
-export { User }
+export { User };

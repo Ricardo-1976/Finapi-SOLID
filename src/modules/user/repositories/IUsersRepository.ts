@@ -1,3 +1,4 @@
+
 interface ICreateUserDTO {
   name: string;
   cpf: string;
