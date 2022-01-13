@@ -35,6 +35,13 @@ class AccountsRepository implements AccountsRepository {
   list(): Account[] {
     return this.accounts;
   }
+
+  //Veryfile cpf
+  findByName(cpf: string): Account {
+    const account = this.accounts.find((account) => account.cpf === cpf);
+
+    return account;
+  }
 }
  
 export { AccountsRepository };

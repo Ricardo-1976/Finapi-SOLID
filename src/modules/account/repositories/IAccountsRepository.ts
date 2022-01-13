@@ -8,6 +8,7 @@ interface ICreateAccountDTO {
 interface IAccountsRepository {
   create({name, cpf}: ICreateAccountDTO): void;
   list(): Account[];
+  findByName( cpf: string): Account;
 }
 
 export { IAccountsRepository , ICreateAccountDTO }
